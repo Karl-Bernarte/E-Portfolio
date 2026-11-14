@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karl Shane Bernarte | Computer Science Student</title>
+<meta name="description" content="Portfolio of Karl Shane Bernarte, 4th-year BS Computer Science student at Holy Angel University, open to AI developer OJT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0B0C;--sf:#141416;--s2:#1A1A1D;--bd:#26262B;--tx:#F2EFE9;--mu:#9A9AA2;--ac:#7AA2FF;--on:#0B0B0C}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.c{font-family:'Inter Tight','Inter',sans-serif;letter-spacing:-.02em}
+.w{max-width:1100px;margin:0 auto;padding:0 28px}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,11,12,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:20px;letter-spacing:.02em}
+.logo i{width:8px;height:8px;border-radius:50%;background:var(--ac)}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav li a{font-size:14px;font-weight:500;color:var(--mu);padding:23px 0;border-bottom:2px solid transparent;transition:color .15s}
+nav li a:hover,nav li a.on{color:var(--tx);border-color:var(--ac)}
+.eb,.ty,.st,.md em,.sk h3,.sk2 h3,.stat span,.ch span,h2 small,footer{font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace;font-weight:500}
+.eb{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mu);margin:0 0 26px}
+.eb::before{content:"";width:36px;height:1px;background:var(--ac)}
+#about{padding:72px 0 60px}
+.hero{display:grid;grid-template-columns:1.4fr .7fr;gap:64px;align-items:center}
+.st{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:var(--mu);border:1px solid var(--bd);background:var(--sf);padding:5px 14px;border-radius:999px;margin-bottom:26px}
+.st b{width:7px;height:7px;border-radius:50%;background:var(--ac)}
+h1{font-weight:800;font-size:clamp(54px,9.5vw,116px);line-height:.95;letter-spacing:-.045em;margin:0 0 22px}
+.role{font-size:17px;margin:0 0 24px;font-weight:500}.role span{color:var(--mu);font-weight:400}
+.bio{color:var(--mu);max-width:600px;margin:0 0 14px;font-size:16px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.b{display:inline-flex;gap:10px;align-items:center;font-weight:600;font-size:15px;padding:13px 24px;border-radius:8px;transition:transform .15s,border-color .15s,color .15s}
+.b1{background:var(--ac);color:var(--on)}
+.b2{border:1px solid var(--bd);background:var(--sf)}
+.b:hover{transform:translateY(-2px)}.b2:hover{border-color:var(--ac);color:var(--ac)}
+.ph{position:relative;aspect-ratio:4/5;border:1px solid var(--bd);border-radius:16px;background:linear-gradient(160deg,var(--s2),var(--sf));overflow:hidden;display:flex;align-items:center;justify-content:center}
+.ph span{font-size:84px;font-weight:800;color:var(--bd);letter-spacing:-.04em}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:64px}
+.stat{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:18px 20px}
+.stat strong{display:block;font-size:38px;line-height:1.05;font-weight:700;letter-spacing:-.03em}
+.stat span{font-size:12px;color:var(--mu)}
+.sec{padding:72px 0;border-top:1px solid var(--bd)}
+h2{font-weight:700;font-size:clamp(34px,5vw,52px);line-height:1.05;letter-spacing:-.035em;margin:0 0 34px}
+h2 small{font-size:12px;color:var(--ac);border:1px solid var(--bd);border-radius:6px;padding:4px 9px;margin-right:14px;vertical-align:middle;letter-spacing:.1em}
+.sk{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.sk h3,.sk2 h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin:0 0 14px}
+.ch{display:flex;flex-wrap:wrap;gap:9px}
+.ch span{font-size:13px;border:1px solid var(--bd);background:var(--sf);border-radius:6px;padding:5px 12px}
+.sk2{margin-top:32px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:rgba(122,162,255,.6)}
+.md{aspect-ratio:16/6;display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid var(--bd);background:radial-gradient(circle at 1px 1px,rgba(255,255,255,.07) 1px,transparent 0) 0 0/18px 18px,var(--s2)}
+.md svg{width:64px;height:64px;color:var(--ac);fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.md em{font-style:normal;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);text-align:right}
+.bd{padding:26px 28px 24px;display:flex;flex-direction:column;flex:1}
+.ty{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.card h3{font-size:28px;line-height:1.1;letter-spacing:-.03em;margin:6px 0 4px;font-weight:700}
+.rl{font-size:14px;color:var(--mu);margin:0 0 14px}
+.card p{color:var(--mu);font-size:15px;margin:0 0 14px}
+.card .ch{margin:auto 0 20px;padding-top:6px}
+.card .ch span{font-size:12px;padding:3px 10px}
+.lk{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid var(--bd);padding-top:16px;font-size:14px;font-weight:600}
+.lk a:hover{color:var(--ac)}
+.ed{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:24px 28px}
+.ed h3{margin:0;font-size:24px;letter-spacing:-.03em}.ed p{margin:2px 0 0;color:var(--mu);font-size:15px}
+.ct{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ct h2{margin:0;font-size:clamp(40px,6vw,68px);letter-spacing:-.045em}
+.ct a.m{display:block;font-size:clamp(20px,2.6vw,28px);font-weight:600;letter-spacing:-.02em;border-bottom:1px solid var(--ac);padding-bottom:14px;margin-bottom:20px;word-break:break-all}
+.ct a.m:hover{color:var(--ac)}
+.ct a.ph2{font-size:clamp(17px,2vw,22px);color:var(--mu)}
+.ct .r{display:flex;gap:12px;flex-wrap:wrap}
+.ct .r a{font-weight:600;font-size:14px;border:1px solid var(--bd);background:var(--s2);padding:10px 18px;border-radius:8px;transition:border-color .15s,color .15s}
+.ct .r a:hover{border-color:var(--ac);color:var(--ac)}
+footer{padding:36px 0 52px;color:var(--mu);font-size:12px;display:flex;justify-content:space-between}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+.cr{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--bd)}.cr:last-of-type{border-bottom:1px solid var(--bd)}.cr h3{margin:0;font-size:20px;letter-spacing:-.02em}.cr p{margin:2px 0 0;color:var(--mu);font-size:14px}.cr span{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:var(--mu)}
+.pi{all:unset;display:block;cursor:zoom-in;aspect-ratio:16/10;border-bottom:1px solid var(--bd);background:var(--s2);overflow:hidden}
+.pi img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
+.card:hover .pi img{transform:scale(1.03)}
+.pi.pc img{object-fit:contain;object-position:center}
+.pi:focus-visible,.crb:focus-visible{outline:2px solid var(--ac);outline-offset:-2px}
+.cl{border-bottom:1px solid var(--bd)}
+.cr{display:block;padding:0;border-top:1px solid var(--bd)}
+.crb{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 6px;cursor:pointer}
+.crb h3{margin:0;font-size:22px;letter-spacing:-.02em;transition:color .15s}
+.crb:hover h3{color:var(--ac)}
+.cr .cv{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:var(--ac);white-space:nowrap}
+.cm{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:18px}
+.cm p{margin:0;color:var(--mu);font-size:14px}.cm span{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:var(--mu)}
+.vf{color:var(--ac);font-weight:600}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,5,6,.92);display:none;align-items:center;justify-content:center;padding:28px;flex-direction:column;gap:14px}
+.lb.open{display:flex}.lb img{max-width:min(1100px,100%);max-height:80vh;border-radius:10px;border:1px solid var(--bd)}
+.lb p{margin:0;color:var(--tx);font-weight:600}.lb button{position:absolute;top:18px;right:22px;background:var(--sf);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:8px 14px;font:600 14px 'Inter',sans-serif;cursor:pointer}
+@media (max-width:860px){.hero,.sk,.grid,.ct{grid-template-columns:1fr}.ph{max-width:260px}.stats{grid-template-columns:1fr 1fr}nav ul{gap:18px}.ct{padding:32px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo c" href="#about"><i></i>KSB</a>
+<ul class="c"><li><a href="#about" class="on">About me</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<main class="w">
+<section id="about">
+<p class="eb c">About me</p>
+<div class="hero">
+<div>
+<span class="st c"><b></b>Open to OJT opportunities</span>
+<h1 class="c">Karl Shane<br><span>Bernarte</span></h1>
+<p class="role">Computer Science Student <span>/ Angeles City, Pampanga, Philippines</span></p>
+<p class="bio">I’m a fourth-year Computer Science student at Holy Angel University and a Dean’s Lister. I like building apps that do something useful, from a voice-controlled Android app to a workout tracker and a habit app.</p>
+<p class="bio">For our thesis, HandsFree, I fine-tuned a speech recognition model for Filipino and exported it to run on a phone. I’m looking for an OJT as an AI developer where I can build real software, work with a team, and learn from experienced developers.</p>
+<div class="btns c"><a class="b b1" href="#projects">View projects ↓</a><a class="b b2" href="resume.pdf" target="_blank" rel="noopener">Preview résumé ↗</a></div>
+</div>
+<div class="ph" aria-label="Photo of Karl"><span class="c">KSB</span><img src="photo.jpg" alt="Karl Shane Bernarte" onerror="this.remove()"></div>
+</div>
+</section>
+
+<section id="skills" class="sec rv">
+<p class="eb c">Skills</p>
+<div class="sk">
+<div><h3 class="c">Programming languages</h3><div class="ch"><span>Python</span><span>Java</span><span>C#</span><span>Dart</span><span>JavaScript</span><span>SQL</span><span>HTML</span><span>CSS</span></div></div>
+<div><h3 class="c">Core concepts</h3><div class="ch"><span>Speech Recognition</span><span>Model Fine-tuning</span><span>Full-Stack Development</span><span>Mobile Development</span><span>Database Design</span></div></div>
+</div>
+<div class="sk2"><h3 class="c">Frameworks and tools</h3><div class="ch"><span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>Flutter</span><span>PostgreSQL</span><span>AWS</span><span>PyTorch</span><span>Hugging Face</span><span>ONNX</span><span>Git</span><span>GitHub</span><span>Figma</span></div></div>
+</section>
+
+<section id="projects" class="sec">
+<h2 class="c"><small>01</small>Projects</h2>
+<div class="grid">
+<article class="card rv"><button type="button" class="pi pc zb" data-src="projects/handsfree.jpg" data-title="HandsFree app screen" aria-label="View HandsFree app screen"><img src="projects/handsfree.jpg" alt="HandsFree app screen" loading="lazy"></button>
+<div class="bd"><span class="ty c">Thesis · Speech recognition</span><h3 class="c">HandsFree</h3><p class="rl">Model fine-tuning and export · 2026</p>
+<p>A voice-controlled Android navigation app in Filipino. I fine-tuned Whisper-tiny on a combined Filipino speech dataset (Sapinsapin corpus and Google FLEURS fil_ph) to lower word error rate, then exported it to ONNX to run on the phone.</p>
+<div class="ch"><span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>ONNX</span></div>
+<div class="lk c"><a href="https://huggingface.co/KarlShane11/handsfree-whisper-tiny-tl" target="_blank" rel="noopener">Model ↗</a><a href="https://huggingface.co/datasets/KarlShane11/handsfree-filipino-speech-combined" target="_blank" rel="noopener">Dataset ↗</a><a href="https://github.com/JCDC0/HandsFree" target="_blank" rel="noopener">GitHub ↗</a></div></div></article>
+
+<article class="card rv"><button type="button" class="pi zb" data-src="projects/hercurles-tracker.jpg" data-title="Hercurles tracker screen" aria-label="View Hercurles tracker screen"><img src="projects/hercurles-tracker.jpg" alt="Hercurles tracker screen" loading="lazy"></button>
+<div class="bd"><span class="ty c">Final project · Full-stack web</span><h3 class="c">Hercurles</h3><p class="rl">Full-Stack Developer · 2026</p>
+<p>A workout, food and weight tracker. I built the React front end with Vite and the Express API, and designed the PostgreSQL database behind it.</p>
+<div class="ch"><span>React</span><span>Vite</span><span>Express</span><span>PostgreSQL</span></div>
+<div class="lk c"><a href="https://github.com/Karl-Bernarte/Hercurles" target="_blank" rel="noopener">GitHub ↗</a></div></div></article>
+
+<article class="card rv"><button type="button" class="pi zb" data-src="projects/procrastimate.jpg" data-title="Procrastimate profile screen" aria-label="View Procrastimate profile screen"><img src="projects/procrastimate.jpg" alt="Procrastimate profile screen" loading="lazy"></button>
+<div class="bd"><span class="ty c">Mobile app</span><h3 class="c">Procrastimate</h3><p class="rl">Mobile Developer · 2025</p>
+<p>A task scheduler built to keep users consistent. You set your own points for each task, finishing a task each day builds a streak that resets if you miss a day, and you redeem points for rewards you create yourself.</p>
+<div class="ch"><span>Flutter</span><span>Dart</span></div>
+<div class="lk c"><a href="https://github.com/Haruuowo/procastimate_app" target="_blank" rel="noopener">GitHub ↗</a></div></div></article>
+
+<article class="card rv"><button type="button" class="pi zb" data-src="projects/pokemon-hunt.jpg" data-title="HAU Pokemon catch monsters screen" aria-label="View HAU Pokemon catch monsters screen"><img src="projects/pokemon-hunt.jpg" alt="HAU Pokemon catch monsters screen" loading="lazy"></button>
+<div class="bd"><span class="ty c">Group project · Cloud</span><h3 class="c">Pokemon Hunt</h3><p class="rl">Group project</p>
+<p>A Pokemon-themed group project built with AWS cloud services.</p>
+<div class="ch"><span>AWS</span></div>
+<div class="lk c"><span style="color:var(--mu);font-weight:500">Demo no longer live (AWS trial ended)</span></div></div></article>
+
+<article class="card rv"><button type="button" class="pi zb" data-src="projects/hercurles-gym-website.jpg" data-title="Hercurles Gym website home page" aria-label="View Hercurles Gym website home page"><img src="projects/hercurles-gym-website.jpg" alt="Hercurles Gym website home page" loading="lazy"></button>
+<div class="bd"><span class="ty c">Web project</span><h3 class="c">Hercurles Gym Website</h3><p class="rl">Web Developer · 2024</p>
+<p>A multi-page gym website with Home, About Us, Training Program, Why Join and Join Us pages, deployed with GitHub Pages.</p>
+<div class="ch"><span>HTML</span><span>GitHub Pages</span></div>
+<div class="lk c"><a href="https://github.com/Karl-Bernarte/Hercurles-Gym" target="_blank" rel="noopener">GitHub ↗</a><a href="https://karl-bernarte.github.io/Hercurles-Gym/" target="_blank" rel="noopener">Live site ↗</a></div></div></article>
+</div>
+</section>
+
+<section id="certifications" class="sec">
+<h2 class="c"><small>02</small>Certifications</h2>
+<div class="cl">
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/data-analytics-essentials.jpg" data-title="Data Analytics Essentials"><span class="ct2"><h3 class="c">Data Analytics Essentials</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Cisco Networking Academy · HAU School of Computing</p><span>Apr 2026</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/ccna-intro-networks.jpg" data-title="CCNA: Introduction to Networks"><span class="ct2"><h3 class="c">CCNA: Introduction to Networks</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Cisco Networking Academy · HAU School of Computing</p><span>Apr 2026</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/ai-fundamentals.jpg" data-title="AI Fundamentals with IBM SkillsBuild"><span class="ct2"><h3 class="c">AI Fundamentals with IBM SkillsBuild</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Cisco Networking Academy</p><span>Feb 2026</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/cyber-threat-management.jpg" data-title="Cyber Threat Management"><span class="ct2"><h3 class="c">Cyber Threat Management</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Cisco Networking Academy · HAU School of Computing</p><span>Dec 2025</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/endpoint-security.jpg" data-title="Endpoint Security"><span class="ct2"><h3 class="c">Endpoint Security</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Cisco Networking Academy · HAU School of Computing</p><span>Aug 2025</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/relational-database.jpg" data-title="Relational Database"><span class="ct2"><h3 class="c">Relational Database</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>freeCodeCamp</p><span>Feb 2025</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/intro-to-figma.jpg" data-title="Introduction to Figma"><span class="ct2"><h3 class="c">Introduction to Figma</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>Simplilearn SkillUP</p><span>Oct 2024</span></div></div>
+<div class="cr rv"><button type="button" class="crb zb" data-src="certs/responsive-web-design.jpg" data-title="Responsive Web Design"><span class="ct2"><h3 class="c">Responsive Web Design</h3></span><span class="cv">View ↗</span></button><div class="cm"><p>freeCodeCamp</p><span>Sep 2024</span></div></div>
+</div>
+</section>
+
+<section class="sec rv">
+<p class="eb c">Education</p>
+<div class="ed"><div><h3 class="c">Holy Angel University</h3><p>Bachelor of Science in Computer Science · School of Computing, Angeles City</p></div><div><h3 class="c">2023 – 2027</h3><p>In progress · Dean’s Lister, 2nd and 3rd year</p></div></div>
+</section>
+
+<section id="contact" class="sec rv">
+<div class="ct">
+<div><p class="eb c">Contact</p><h2 class="c">Let’s talk about OJT</h2></div>
+<div><a class="m" href="mailto:ky.bernarte@gmail.com">ky.bernarte@gmail.com</a>
+<a class="m ph2" href="tel:+639750250074">+63 975 025 0074</a>
+<div class="r c"><a href="https://github.com/Karl-Bernarte" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/karl-bernarte-77138b44b/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a></div></div>
+</div>
+</section>
+<footer><span>© 2026 Karl Shane Bernarte</span><a href="#about">Back to top ↑</a></footer>
+</main>
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button type="button" id="lbx">Close ✕</button><img id="lbi" alt=""><p class="c" id="lbt"></p></div>
+<script>
+(function(){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var links=document.querySelectorAll('nav li a'),ids=['about','skills','projects','certifications','contact'];
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ids.forEach(function(i){so.observe(document.getElementById(i))});
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),lbt=document.getElementById('lbt');
+function cl(){lb.classList.remove('open')}
+document.querySelectorAll('.zb').forEach(function(b){b.addEventListener('click',function(){lbi.src=b.dataset.src;lbi.alt=b.dataset.title;lbt.textContent=b.dataset.title;lb.classList.add('open')})});
+lb.addEventListener('click',function(e){if(e.target!==lbi)cl()});document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+})();
+</script>
+</body>
+</html>
